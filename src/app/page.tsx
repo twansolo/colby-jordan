@@ -69,7 +69,7 @@ export default function SpaceLinkTree() {
             // transition={{ duration: 200, repeat: Infinity, ease: "linear" }}
             className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-900 via-pink-500 to-red-500 p-1"
           >
-            <img src={profile.avatar} alt={profile.name} className="w-full h-full rounded-full" />
+            <Image src={profile.avatar} alt={profile.name} className="w-full h-full rounded-full" />
           </motion.div>
           <h1 className="text-3xl font-bold text-center text-transparent bg-clip-text text-black">
             {profile.name}

@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 import { X } from 'lucide-react'
 import Link from 'next/link'
 
@@ -39,9 +40,9 @@ export default function SpacePortfolio() {
               className="relative aspect-square overflow-hidden rounded-lg cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => setSelectedImage(post)}
+              // onClick={() => setSelectedImage(post)}
             >
-              <img
+              <Image
                 src={post.imageUrl}
                 alt={post.caption}
                 className="w-full h-full object-cover"
@@ -69,7 +70,7 @@ export default function SpacePortfolio() {
                 className="relative max-w-3xl w-full bg-gray-800 rounded-lg overflow-hidden"
                 onClick={(e) => e.stopPropagation()}
               >
-                <img
+                <Image
                   src={selectedImage.imageUrl}
                   alt={selectedImage.caption}
                   className="w-full h-auto"
