@@ -40,7 +40,7 @@ export default function SpacePortfolio() {
               className="relative aspect-square overflow-hidden rounded-lg cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              // onClick={() => setSelectedImage(post)}
+              onClick={() => setSelectedImage(post)}
             >
               <Image
                 src={post.imageUrl}
@@ -71,8 +71,10 @@ export default function SpacePortfolio() {
                 onClick={(e) => e.stopPropagation()}
               >
                 <Image
-                  src={selectedImage.imageUrl}
-                  alt={selectedImage.caption}
+                  src=""
+                  alt=""
+                  // src={selectedImage.imageUrl}
+                  // alt={selectedImage.caption}
                   className="w-full h-auto"
                 />
                 <div className="absolute top-2 right-2">
