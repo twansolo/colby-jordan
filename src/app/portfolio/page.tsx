@@ -6,15 +6,15 @@ import Link from 'next/link'
 
 // Simulated Instagram data
 const instagramPosts = [
-  { id: 1, imageUrl: '/placeholder.svg?height=300&width=300', caption: 'Exploring new galaxies #SpaceExplorer' },
-  { id: 2, imageUrl: '/placeholder.svg?height=300&width=300', caption: 'Nebula dreams #CosmicBeauty' },
-  { id: 3, imageUrl: '/placeholder.svg?height=300&width=300', caption: 'Starship selfie #SpaceSelfie' },
-  { id: 4, imageUrl: '/placeholder.svg?height=300&width=300', caption: 'Planet hopping #InterstellarTravel' },
-  { id: 5, imageUrl: '/placeholder.svg?height=300&width=300', caption: 'Aurora viewing #CosmicLights' },
-  { id: 6, imageUrl: '/placeholder.svg?height=300&width=300', caption: 'Black hole observation #EventHorizon' },
-  { id: 7, imageUrl: '/placeholder.svg?height=300&width=300', caption: 'Martian sunset #RedPlanet' },
-  { id: 8, imageUrl: '/placeholder.svg?height=300&width=300', caption: 'Space station life #FloatingInSpace' },
-  { id: 9, imageUrl: '/placeholder.svg?height=300&width=300', caption: 'Lunar landing #MoonWalk' },
+  { id: 1, imageUrl: '/placeholder.png?height=300&width=300', caption: 'Exploring new galaxies #SpaceExplorer' },
+  { id: 2, imageUrl: '/placeholder.png?height=300&width=300', caption: 'Nebula dreams #CosmicBeauty' },
+  { id: 3, imageUrl: '/placeholder.png?height=300&width=300', caption: 'Starship selfie #SpaceSelfie' },
+  { id: 4, imageUrl: '/placeholder.png?height=300&width=300', caption: 'Planet hopping #InterstellarTravel' },
+  { id: 5, imageUrl: '/placeholder.png?height=300&width=300', caption: 'Aurora viewing #CosmicLights' },
+  { id: 6, imageUrl: '/placeholder.png?height=300&width=300', caption: 'Black hole observation #EventHorizon' },
+  { id: 7, imageUrl: '/placeholder.png?height=300&width=300', caption: 'Martian sunset #RedPlanet' },
+  { id: 8, imageUrl: '/placeholder.png?height=300&width=300', caption: 'Space station life #FloatingInSpace' },
+  { id: 9, imageUrl: '/placeholder.png?height=300&width=300', caption: 'Lunar landing #MoonWalk' },
 ]
 
 export default function SpacePortfolio() {

@@ -1,12 +1,13 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const profile = {
   name: "Colby Jordan",
   avatar: "/3358305e63eb95643aa0a0d1441e366d.jpeg?height=200&width=200",
   links: [
-    { title: "Portfolio", url: "https://colby-jordan.com/portfolio" },
+    { title: "Portfolio", url: "/portfolio" },
     { title: "Sapphire Beauty Spa", url: "https://sapphirebeautyspa.com/" },
     { title: "Facebook", url: "https://www.facebook.com/SapphireBeauty.IA/" },
     { title: "Venmo", url: "https://venmo.com/u/ColbyJordan14" },
@@ -23,9 +24,9 @@ export default function SpaceLinkTree() {
   if (!mounted) return null
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center p-4 overflow-hidden relative">
+    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center p-4 overflow-hidden relative bg-[url('/hero.jpg')">
       {/* Starry background */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* <div className="absolute inset-0 overflow-hidden">
         {[...Array(100)].map((_, i) => (
           <div
             key={i}
@@ -39,7 +40,14 @@ export default function SpaceLinkTree() {
             }}
           />
         ))}
-      </div>
+      </div> */}
+      <Image
+        src="/hero.jpg?height=800&width=800"
+        alt="Elegant spa treatment"
+        layout="fill"
+        objectFit="cover"
+        className="rounded-tl-full opacity-20 filter blur-sm "
+      />
       
       {/* Shooting star */}
       <div className="absolute w-1 h-1 bg-blue-400 rounded-full" 
@@ -59,11 +67,11 @@ export default function SpaceLinkTree() {
           <motion.div 
             // animate={{ rotate: 360 }}
             // transition={{ duration: 200, repeat: Infinity, ease: "linear" }}
-            className="w-32 h-32 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 p-1"
+            className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-900 via-pink-500 to-red-500 p-1"
           >
             <img src={profile.avatar} alt={profile.name} className="w-full h-full rounded-full" />
           </motion.div>
-          <h1 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+          <h1 className="text-3xl font-bold text-center text-transparent bg-clip-text text-black">
             {profile.name}
           </h1>
         </div>
